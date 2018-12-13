@@ -13,7 +13,31 @@ def process_inputs():
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
-                           output="You have limited options, huh? %s." % name)
+                           output="You have limited options, huh? %s." % name,
+                           text = freeform)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
